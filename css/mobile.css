@@ -1,4 +1,9 @@
-@media screen and (max-width: 767px) {
+
+
+
+
+
+/* @media screen and (max-width: 767px) {
 
     .mobile-menu-list,
     .address, .mob-social-list .mob-social-item {
@@ -61,23 +66,7 @@
         .header-item-curent::after {
             display: none;
         }
-    .header-list {
-        display: flex;
-        flex-direction: column;
-        row-gap: 40px;
-    }
-    .header-nav {
-        padding-bottom: 284px;
-    }
 
-    .header-link {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-    }
     .header-address-link.tel {
         font-family: 'Roboto';
         font-style: normal;
@@ -137,4 +126,4 @@
        column-gap: normal;
     }
 }
-
+ */
