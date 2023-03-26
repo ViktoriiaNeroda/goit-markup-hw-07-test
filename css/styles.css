@@ -6,6 +6,7 @@ h1, h2, h3, h4, p, ul {
 
 body {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 .link {
     text-decoration: none;
@@ -14,14 +15,48 @@ body {
 .list {
     list-style: none;
 }
-
-.container {
+/*КОНТЕЙНЕР з адаптивом*/
+/*.container {
     width: 1160px;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
     
+}*/
+.container {
+    min-width: 320px;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
+/*.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+@media screen and (max-width:767px) {
+    .container {
+        width: 100vw;
+      
+  }
+    }
+    
+@media screen and (min-width: 768px) {
+    .container {
+        width: 766px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
+}
+/* ======================HEADER============================ */
+
 .header {
     border-bottom: 1px solid #E7E9FC;
     padding: 24px 0;
@@ -70,6 +105,7 @@ body {
     color: #2E2F42;
     margin-right: 76px;
 }
+
 .header-address-link {
     font-style: normal;    
     font-weight: 400;
@@ -109,23 +145,32 @@ body {
     bottom: -1px;
     transform: translateY(24px);
 }
-
+/*.mobile-menu.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: opacity;
+}*/
 
 .hero {
-    padding: 188px 0px; 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/background-hero-main-img.jpg);
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 428px;
+    height: 432px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/mob-background-hero-main-img1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1440px;
     background-color: #2E2F42;
-    margin: auto;
 }  
 
 .hero-title {
-    width: 496px;
+    max-width: 320px;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
@@ -144,7 +189,7 @@ body {
     border-radius: 4px;
     padding: 16px 32px;
     display: block;
-    margin: 48px auto 0;
+    margin: 72px auto;
     border: none;
  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -153,30 +198,31 @@ body {
     background: #404BBF;
 }
 .about {
-    padding: 120px 0 60px 0;
+    padding: 96px 0 96px 0;
 }
 .list-about {
     display: flex;
+    flex-direction: column;
     gap: 24px;
     list-style: none;
 }
-.about-item {
+/*.about-item {
    flex-basis: calc((100% - 24px) / 4); 
-}
+}*/
 .about-text {
     margin-top: 8px;
 }
 
 .subtitle {
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
 
 .text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -200,6 +246,9 @@ body {
 }
 .subtitle-about {
     margin-top: 8px;
+    text-align: center;
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 .work {
     padding: 60px 0 120px 0;
@@ -223,14 +272,28 @@ body {
 .team-list {
     margin-top: 72px;
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    row-gap: 72px;
+    align-items: center;
 }
 .subtitle-team {
     text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
 }
 .text-team {
     margin-top: 8px;
     text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
 }
 .cards-team {
   
